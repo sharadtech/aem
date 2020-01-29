@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/twoFactorAuth/install"/>
+    <filter root="/apps/system/config/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment-16a90b46-6083-46cc-87f3-9531f058edc6.config"/>
+    <filter root="/libs/granite/core/components/login/login.jsp"/>
+    <filter root="/libs/granite/core/content/login/clientlib/login.js"/>
+    <filter root="/libs/granite/ui/content/userproperties/preferences/form/items"/>
+</workspaceFilter>

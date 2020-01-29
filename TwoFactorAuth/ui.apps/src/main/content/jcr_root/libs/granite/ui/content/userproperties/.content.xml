@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:mixinTypes="[granite:InternalArea]"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="granite/ui/components/endor/userproperties"
+    id="granite-user-properties">
+    <self/>
+    <impersonated/>
+    <preferences jcr:primaryType="nt:unstructured">
+        <form jcr:primaryType="nt:unstructured">
+            <items jcr:primaryType="nt:unstructured">
+                <language
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                    fieldLabel="Language"
+                    name="language"
+                    translateOptions="{Boolean}false">
+                    <items jcr:primaryType="nt:unstructured">
+                        <en
+                            jcr:primaryType="nt:unstructured"
+                            text="English"
+                            text_noI18n="English"
+                            value="en"/>
+                        <de
+                            jcr:primaryType="nt:unstructured"
+                            text="Deutsch"
+                            text_noI18n="Deutsch"
+                            value="de"/>
+                        <es
+                            jcr:primaryType="nt:unstructured"
+                            text="Español"
+                            text_noI18n="Español"
+                            value="es"/>
+                        <fr
+                            jcr:primaryType="nt:unstructured"
+                            text="Français"
+                            text_noI18n="Français"
+                            value="fr"/>
+                        <it
+                            jcr:primaryType="nt:unstructured"
+                            text="Italiano"
+                            text_noI18n="Italiano"
+                            value="it"/>
+                        <pt-br
+                            jcr:primaryType="nt:unstructured"
+                            text="Português (Brasil)"
+                            text_noI18n="Português (Brasil)"
+                            value="pt-br"/>
+                        <zh-cn
+                            jcr:primaryType="nt:unstructured"
+                            text="简体中文"
+                            text_noI18n="简体中文"
+                            value="zh-cn"/>
+                        <zh-tw
+                            jcr:primaryType="nt:unstructured"
+                            text="繁體中文 (有限的支援)"
+                            text_noI18n="繁體中文 (有限的支援)"
+                            value="zh-tw"/>
+                        <ja
+                            jcr:primaryType="nt:unstructured"
+                            text="日本語"
+                            text_noI18n="日本語"
+                            value="ja"/>
+                        <ko-kr
+                            jcr:primaryType="nt:unstructured"
+                            text="한국어"
+                            text_noI18n="한국어"
+                            value="ko-kr"/>
+                    </items>
+                </language>
+                <window-mode
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                    fieldLabel="Window Management"
+                    name="winMode">
+                    <items jcr:primaryType="nt:unstructured">
+                        <multiple
+                            jcr:primaryType="nt:unstructured"
+                            text="Multiple Windows (Default)"
+                            value="multi"/>
+                        <single
+                            jcr:primaryType="nt:unstructured"
+                            text="Single Window"
+                            value="single"/>
+                    </items>
+                </window-mode>
+                <onboarding
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                    checked="{Boolean}true"
+                    name="granite.shell.showonboarding620"
+                    text="Show Help Overlays"
+                    uncheckedValue="false"
+                    value="{Boolean}true"/>
+                <show-desktop-links
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                    fieldDescription="Requires Assets companion app or Creative Cloud desktop app"
+                    name="showAssetDesktopLinks"
+                    text="Show desktop actions for Assets"
+                    tooltipPosition="top"
+                    value="{Boolean}true"/>
+                <color
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                    fieldLabel="Annotation Color"
+                    name="color"
+                    showProperties="{Boolean}false"
+                    value="#FFCC00">
+                    <items jcr:primaryType="nt:unstructured">
+                        <defaultcolor
+                            jcr:primaryType="nt:unstructured"
+                            value="#FFCC00"/>
+                    </items>
+                </color>
+                <relative-date-cuttoff
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                    fieldDescription="There are two date display options: relative (e.g. 3 months ago) and absolute (e.g. 01/03/2018) and one can switch from one format to another after a certain time (e.g. 1 day, 1 week)."
+                    fieldLabel="Relative Date Presentation"
+                    name="relativeDateCutoff"
+                    tooltipPosition="top">
+                    <items jcr:primaryType="nt:unstructured">
+                        <alwaysExact
+                            jcr:primaryType="nt:unstructured"
+                            text="Always show exact date"
+                            value="off"/>
+                        <relativeOneDay
+                            jcr:primaryType="nt:unstructured"
+                            text="1 Day"
+                            value="1"/>
+                        <relativeOneWeek
+                            jcr:primaryType="nt:unstructured"
+                            selected="{Boolean}true"
+                            text="7 Days (default)"
+                            value="7"/>
+                        <relativeOneMonth
+                            jcr:primaryType="nt:unstructured"
+                            text="1 Month"
+                            value="30"/>
+                        <relativeOneYear
+                            jcr:primaryType="nt:unstructured"
+                            text="1 Year"
+                            value="365"/>
+                        <alwaysRelative
+                            jcr:primaryType="nt:unstructured"
+                            text="Always show relative date"
+                            value="on"/>
+                    </items>
+                </relative-date-cuttoff>
+                <shortcuts
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                    checked="{Boolean}true"
+                    name="shortcutsEnabled"
+                    text="Enable shortcuts"
+                    uncheckedValue="false"
+                    value="{Boolean}true"/>
+                <authoring-mode
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                    name="authoringMode"
+                    text="Use Classic Authoring Experience"
+                    uncheckedValue="TOUCH"
+                    value="CLASSIC"/>
+                <enable-assets-homepage
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="dam/gui/coral/components/admin/welcome/homepagecheckbox"
+                    fieldDescriptionOnDisabled="This user preference will be available if your Admin has enabled Assets Home Page experience for the entire Organization. Please contact your admin to start using it"
+                    fieldDescriptionOnEnabled="Takes you to the new assets home page experience from the side rail"
+                    name="enableHomePage"
+                    text="Enable Assets Home Page"
+                    tooltipPosition="top"
+                    value="{Boolean}true"/>
+                <two-step-verification
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/form/radiogroup"
+                    class="coral-RadioGroup--vertical"
+                    text="Two Step Verification">
+                    <items jcr:primaryType="nt:unstructured">
+                        <yes
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/radio"
+                            name="twostep"
+                            text="Yes"
+                            value="yes"/>
+                        <no
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/radio"
+                            name="twostep"
+                            text="No"
+                            value="no"/>
+                    </items>
+                </two-step-verification>
+                <qrcode
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/hyperlink"
+                    href="/bin/qrcode"
+                    target=" _blank"
+                    text="Get Scan Code"
+                    x-cq-linkchecker="skip"/>
+            </items>
+        </form>
+    </preferences>
+</jcr:root>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:vlt="http://www.day.com/jcr/vault/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2018-12-18T20:27:11.847+05:30"
+    jcr:createdBy="admin"
+    jcr:description="Two Factor Authentication Bundle by Sharad Tech Ltd."
+    jcr:lastModified="{Date}2018-12-18T20:27:11.847+05:30"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="vlt:PackageDefinition"
+    buildCount="2"
+    builtWith="Adobe Experience Manager-6.5.0"
+    group="SharadTech"
+    lastUnwrapped="{Date}2018-12-18T20:27:11.847+05:30"
+    lastUnwrappedBy="admin"
+    lastWrapped="{Date}2018-12-18T20:27:11.847+05:30"
+    lastWrappedBy="admin"
+    name="content-package"
+    version="">
+    <filter jcr:primaryType="nt:unstructured">
+        <f0
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/apps/system/config/org.apache.sling.jcr.base.internal.LoginAdminWhitelist.fragment-16a90b46-6083-46cc-87f3-9531f058edc6.config"
+            rules="[]"/>
+        <f1
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/libs/granite/core/components/login/login.jsp"
+            rules="[]"/>
+        <f2
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/libs/granite/core/content/login/clientlib/login.js"
+            rules="[]"/>
+        <f3
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/libs/granite/ui/content/userproperties/preferences/form/items"
+            rules="[]"/>
+    </filter>
+</jcr:root>
